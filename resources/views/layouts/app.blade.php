@@ -18,8 +18,14 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="<?php echo asset('assets/addchat/css/addchat.min.css') ?>" rel="stylesheet">
 </head>
 <body>
+    <div id="addchat_app" 
+    data-baseurl="<?php echo url('') ?>"
+    data-csrfname="<?php echo 'X-CSRF-Token' ?>"
+    data-csrftoken="<?php echo csrf_token() ?>"
+></div>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
@@ -76,5 +82,8 @@
             @yield('content')
         </main>
     </div>
+    <script type="module" src="<?php echo asset('assets/addchat/js/addchat.min.js') ?>"></script>
+    <!-- Fallback support for Older browsers -->
+    <script nomodule src="<?php echo asset('assets/addchat/js/addchat-legacy.min.js') ?>"></script>
 </body>
 </html>
