@@ -10625,32 +10625,8 @@ readers do not read off random characters that represent icons */
     }
 }
 
-#addchat-bot .c-footer
-{
-    position: absolute;
-    z-index: 999999999;
-    bottom: 0;
 
-    width: 100%;
 
-    text-align: right;
-}
-#addchat-bot .c-footer-text
-{
-    font-size: .55rem;
-    font-weight: 500;
-
-    z-index: 999999 !important;
-
-    margin: 0 10px 6px 0 !important;
-
-    color: #bdbdbd;
-}
-
-#addchat-bot .c-guestbox.c-active + .c-footer .c-footer-text
-{
-    color: #fff;
-}
 
 #addchat-bot-admin .ca-card
 {
