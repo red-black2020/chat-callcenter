@@ -18,6 +18,7 @@
  <link href="<?php echo asset('assets/addchat/css/addchat.min.css') ?>" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="<?php echo asset('assets/addchat/css/addchat.min.css') ?>" rel="stylesheet">
 </head>
 <body>
     <div id="addchat_app" 
